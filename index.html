@@ -1,0 +1,1574 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Googlinks | Digital Marketing Services</title>
+
+<meta name="description"
+content="Googlinks provides professional digital marketing services including SEO, Google Ads, social media marketing, lead generation and web solutions.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{scroll-behavior:smooth;}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#111827;
+    background:#fff;
+    line-height:1.6;
+}
+
+a{text-decoration:none;color:inherit;}
+img{width:100%;display:block;}
+
+.container{
+    width:90%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(255,255,255,.97);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #e5e7eb;
+}
+
+.navbar{
+    height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:900;
+    letter-spacing:-1px;
+    color:#111827;
+}
+
+.logo span{color:#2563eb;}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav-menu a{
+    font-size:15px;
+    font-weight:600;
+    color:#374151;
+}
+
+.nav-menu a:hover{color:#2563eb;}
+
+.nav-cta{
+    background:#2563eb;
+    color:white !important;
+    padding:11px 20px;
+    border-radius:7px;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HERO */
+.hero{
+    padding:90px 0;
+    background:
+        radial-gradient(circle at 85% 20%,#dbeafe 0,transparent 30%),
+        linear-gradient(135deg,#f8fbff,#fff);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:7px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:1.06;
+    letter-spacing:-2.5px;
+    margin-bottom:22px;
+}
+
+.hero h1 span{color:#2563eb;}
+
+.hero-text{
+    color:#64748b;
+    font-size:18px;
+    max-width:620px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 24px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:700;
+    transition:.25s;
+    border:none;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid #d1d5db;
+    background:#fff;
+}
+
+.btn-outline:hover{
+    border-color:#2563eb;
+    color:#2563eb;
+}
+
+.hero-image{position:relative;}
+
+.hero-image img{
+    height:490px;
+    object-fit:cover;
+    border-radius:22px;
+    box-shadow:0 25px 60px rgba(15,23,42,.15);
+}
+
+.hero-card{
+    position:absolute;
+    bottom:25px;
+    left:-25px;
+    background:white;
+    padding:20px 24px;
+    border-radius:13px;
+    box-shadow:0 15px 40px rgba(0,0,0,.14);
+}
+
+.hero-card strong{
+    display:block;
+    font-size:28px;
+    color:#2563eb;
+}
+
+.hero-card small{color:#64748b;}
+
+/* TRUST */
+.trust{
+    padding:32px 0;
+    border-bottom:1px solid #eee;
+}
+
+.trust-text{
+    text-align:center;
+    color:#94a3b8;
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    margin-bottom:20px;
+}
+
+.trust-logos{
+    display:flex;
+    justify-content:center;
+    gap:55px;
+    flex-wrap:wrap;
+    color:#64748b;
+    font-size:17px;
+    font-weight:800;
+}
+
+/* COMMON */
+section{padding:90px 0;}
+
+.section-title{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 55px;
+}
+
+.label{
+    color:#2563eb;
+    font-size:13px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.section-title h2{
+    font-size:42px;
+    line-height:1.15;
+    margin:10px 0 15px;
+}
+
+.section-title p{
+    color:#64748b;
+    font-size:17px;
+}
+
+/* SERVICES */
+.services{background:#f8fafc;}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:23px;
+}
+
+.service-card{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 18px 45px rgba(15,23,42,.1);
+}
+
+.service-card img{
+    height:190px;
+    object-fit:cover;
+}
+
+.service-content{padding:25px;}
+
+.service-icon{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:9px;
+    background:#dbeafe;
+    color:#2563eb;
+    font-size:11px;
+    font-weight:900;
+    margin-bottom:15px;
+}
+
+.service-content h3{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.service-content p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* ABOUT */
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image img{
+    height:480px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.about-content h2{
+    font-size:42px;
+    line-height:1.15;
+    margin:12px 0 18px;
+}
+
+.about-content p{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+.check-list{list-style:none;}
+
+.check-list li{
+    margin:12px 0;
+    font-weight:600;
+}
+
+.check-list li::before{
+    content:"✓";
+    color:#2563eb;
+    font-weight:900;
+    margin-right:10px;
+}
+
+/* STATS */
+.stats{
+    background:#111827;
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+}
+
+.stat{
+    padding:15px;
+    border-right:1px solid rgba(255,255,255,.12);
+}
+
+.stat:last-child{border:none;}
+
+.stat h3{
+    font-size:38px;
+    color:#60a5fa;
+}
+
+.stat p{
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+/* PROCESS */
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.process{
+    padding:30px 22px;
+    border:1px solid #e5e7eb;
+    border-radius:13px;
+}
+
+.process-number{
+    font-size:42px;
+    color:#dbeafe;
+    font-weight:900;
+}
+
+.process h3{margin:5px 0 8px;}
+
+.process p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* RESULTS */
+.results{background:#f8fafc;}
+
+.results-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.result-card{
+    background:#fff;
+    padding:30px;
+    border:1px solid #e5e7eb;
+    border-radius:15px;
+}
+
+.result-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.growth{
+    color:#16a34a;
+    font-weight:800;
+}
+
+.progress{
+    height:9px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.progress div{
+    height:100%;
+    background:#2563eb;
+}
+
+.result-info{
+    display:flex;
+    justify-content:space-between;
+    color:#64748b;
+    font-size:13px;
+}
+
+/* TESTIMONIALS */
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.testimonial{
+    padding:30px;
+    border:1px solid #e5e7eb;
+    border-radius:15px;
+}
+
+.stars{
+    color:#f59e0b;
+    margin-bottom:15px;
+}
+
+.testimonial p{
+    color:#475569;
+    font-size:15px;
+    margin-bottom:22px;
+}
+
+.client{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.client-avatar{
+    width:44px;
+    height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#dbeafe;
+    color:#2563eb;
+    border-radius:50%;
+    font-weight:800;
+}
+
+.client small{
+    display:block;
+    color:#94a3b8;
+}
+
+/* CTA */
+.cta{padding:80px 0;}
+
+.cta-box{
+    background:linear-gradient(110deg,#1d4ed8,#2563eb);
+    color:white;
+    border-radius:22px;
+    padding:70px 40px;
+    text-align:center;
+}
+
+.cta-box h2{
+    font-size:43px;
+    margin-bottom:15px;
+}
+
+.cta-box p{
+    max-width:650px;
+    margin:0 auto 28px;
+    color:#dbeafe;
+}
+
+.cta-box .btn{
+    background:white;
+    color:#1d4ed8;
+}
+
+/* CONTACT */
+.contact{background:#f8fafc;}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:60px;
+}
+
+.contact-info h2{
+    font-size:38px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.contact-info > p{
+    color:#64748b;
+    margin-bottom:28px;
+}
+
+.contact-item{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.contact-icon{
+    width:44px;
+    height:44px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#dbeafe;
+    color:#2563eb;
+    border-radius:9px;
+    font-weight:900;
+}
+
+.contact-item strong{display:block;}
+
+.contact-item span{
+    color:#64748b;
+    font-size:14px;
+}
+
+.contact-form{
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    border:1px solid #e5e7eb;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.form-group{margin-bottom:17px;}
+
+.form-group label{
+    display:block;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:7px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #d1d5db;
+    border-radius:7px;
+    font-family:inherit;
+    font-size:14px;
+}
+
+.form-group textarea{
+    height:125px;
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+/* FOOTER */
+footer{
+    background:#0b1120;
+    color:#cbd5e1;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:45px;
+    border-bottom:1px solid #1e293b;
+}
+
+.footer-logo{
+    font-size:27px;
+    color:white;
+    font-weight:900;
+    margin-bottom:15px;
+}
+
+.footer-logo span{color:#60a5fa;}
+
+.footer-about{
+    color:#94a3b8;
+    font-size:14px;
+    max-width:320px;
+}
+
+footer h4{
+    color:white;
+    margin-bottom:17px;
+}
+
+.footer-links{list-style:none;}
+
+.footer-links li{margin:10px 0;}
+
+.footer-links a{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.footer-links a:hover{color:#fff;}
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    padding-top:25px;
+    color:#64748b;
+    font-size:13px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    background:#25d366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    z-index:1000;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+/* MOBILE */
+@media(max-width:950px){
+
+    .nav-menu{
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        background:#fff;
+        display:none;
+        flex-direction:column;
+        padding:25px;
+        border-bottom:1px solid #eee;
+    }
+
+    .nav-menu.active{display:flex;}
+
+    .menu-toggle{display:block;}
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{font-size:48px;}
+
+    .service-grid{grid-template-columns:repeat(2,1fr);}
+
+    .process-grid{grid-template-columns:repeat(2,1fr);}
+
+    .stats-grid{grid-template-columns:repeat(2,1fr);}
+
+    .stat{border-bottom:1px solid rgba(255,255,255,.12);}
+
+    .results-grid{grid-template-columns:1fr;}
+
+    .testimonial-grid{grid-template-columns:1fr;}
+
+    .footer-grid{grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:600px){
+
+    section{padding:65px 0;}
+
+    .hero{padding:65px 0;}
+
+    .hero h1{font-size:39px;}
+
+    .hero-text{font-size:16px;}
+
+    .hero-image img{height:330px;}
+
+    .hero-card{
+        left:12px;
+        bottom:15px;
+    }
+
+    .section-title h2,
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .service-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{grid-template-columns:1fr 1fr;}
+
+    .stat h3{font-size:30px;}
+
+    .cta-box{padding:50px 22px;}
+
+    .cta-box h2{font-size:32px;}
+
+    .form-row{grid-template-columns:1fr;}
+
+    .contact-form{padding:25px;}
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+
+<a href="#" class="logo">Goog<span>links</span></a>
+
+<nav class="nav-menu" id="navMenu">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
+    <a href="#results">Results</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta">Get Started</a>
+</nav>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="hero-tag">DIGITAL MARKETING SERVICES</span>
+
+<h1>
+    Grow Your Business
+    <span>With Digital.</span>
+</h1>
+
+<p class="hero-text">
+    Googlinks provides professional digital marketing services
+    to help businesses attract customers, generate qualified
+    leads and grow online.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+    Get a Free Consultation →
+</a>
+
+<a href="#services" class="btn btn-outline">
+    Explore Services
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+alt="Digital marketing services">
+
+<div class="hero-card">
+    <strong>Digital</strong>
+    <small>Marketing Solutions</small>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="trust">
+
+<div class="container">
+
+<div class="trust-text">
+    Digital marketing solutions for growing businesses
+</div>
+
+<div class="trust-logos">
+    <span>SEO</span>
+    <span>GOOGLE ADS</span>
+    <span>SOCIAL</span>
+    <span>LEADS</span>
+    <span>WEB</span>
+</div>
+
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="label">Our Services</span>
+
+<h2>Complete Digital Marketing Services.</h2>
+
+<p>
+    From search visibility to lead generation, Googlinks
+    provides the digital marketing solutions your business needs.
+</p>
+
+</div>
+
+<div class="service-grid">
+
+<div class="service-card">
+<img
+src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=800&q=80"
+alt="SEO services">
+
+<div class="service-content">
+<div class="service-icon">SEO</div>
+<h3>Search Engine Optimization</h3>
+<p>
+Improve organic visibility and attract customers
+who are actively searching for your business.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<img
+src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+alt="Google Ads and paid advertising">
+
+<div class="service-content">
+<div class="service-icon">ADS</div>
+<h3>Google & Paid Ads</h3>
+<p>
+Create targeted advertising campaigns focused on
+leads, sales and measurable performance.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<img
+src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+alt="Social media marketing">
+
+<div class="service-content">
+<div class="service-icon">SOC</div>
+<h3>Social Media Marketing</h3>
+<p>
+Build your brand, reach your audience and create
+a stronger social media presence.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<img
+src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+alt="Digital marketing analytics">
+
+<div class="service-content">
+<div class="service-icon">DATA</div>
+<h3>Analytics & Strategy</h3>
+<p>
+Use marketing data, tracking and reporting to make
+better business and campaign decisions.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<img
+src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80"
+alt="Lead generation services">
+
+<div class="service-content">
+<div class="service-icon">LEAD</div>
+<h3>Lead Generation</h3>
+<p>
+Generate qualified leads through campaigns,
+landing pages and conversion strategies.
+</p>
+</div>
+</div>
+
+<div class="service-card">
+<img
+src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80"
+alt="Website and landing page services">
+
+<div class="service-content">
+<div class="service-icon">WEB</div>
+<h3>Web & Landing Pages</h3>
+<p>
+Create modern, fast and conversion-focused websites
+and landing pages for your campaigns.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container about-grid">
+
+<div class="about-image">
+
+<img
+src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85"
+alt="Digital marketing professionals">
+
+</div>
+
+<div class="about-content">
+
+<span class="label">Why Googlinks</span>
+
+<h2>
+    Digital Marketing Focused on Your Business Goals.
+</h2>
+
+<p>
+    Googlinks combines strategy, creativity, technology and
+    data to create practical digital marketing solutions for
+    businesses looking to build visibility and generate growth.
+</p>
+
+<ul class="check-list">
+
+<li>Data-driven marketing strategies</li>
+<li>Transparent campaign reporting</li>
+<li>Conversion-focused execution</li>
+<li>Continuous optimization</li>
+<li>Dedicated support</li>
+
+</ul>
+
+<br>
+
+<a href="#contact" class="btn btn-primary">
+    Talk to Googlinks →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="container stats-grid">
+
+<div class="stat">
+<h3>SEO</h3>
+<p>Search Visibility</p>
+</div>
+
+<div class="stat">
+<h3>ADS</h3>
+<p>Paid Advertising</p>
+</div>
+
+<div class="stat">
+<h3>LEADS</h3>
+<p>Lead Generation</p>
+</div>
+
+<div class="stat">
+<h3>WEB</h3>
+<p>Digital Solutions</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="process">
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="label">Our Process</span>
+
+<h2>Simple. Strategic. Scalable.</h2>
+
+<p>
+A straightforward process designed around your
+business objectives.
+</p>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process">
+<div class="process-number">01</div>
+<h3>Discover</h3>
+<p>
+We understand your business, audience, competitors
+and growth objectives.
+</p>
+</div>
+
+<div class="process">
+<div class="process-number">02</div>
+<h3>Strategize</h3>
+<p>
+We create a practical digital marketing strategy
+based on your goals and budget.
+</p>
+</div>
+
+<div class="process">
+<div class="process-number">03</div>
+<h3>Execute</h3>
+<p>
+We launch campaigns, content and digital experiences
+designed around your objectives.
+</p>
+</div>
+
+<div class="process">
+<div class="process-number">04</div>
+<h3>Optimize</h3>
+<p>
+We measure performance and continuously improve
+campaigns using real data.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="results" id="results">
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="label">Performance</span>
+
+<h2>Marketing Built Around Results.</h2>
+
+<p>
+We focus on the metrics that matter to your business.
+</p>
+
+</div>
+
+<div class="results-grid">
+
+<div class="result-card">
+
+<div class="result-top">
+<h3>Organic Traffic</h3>
+<span class="growth">SEO</span>
+</div>
+
+<div class="progress">
+<div style="width:87%"></div>
+</div>
+
+<div class="result-info">
+<span>Visibility</span>
+<span>Organic Growth</span>
+</div>
+
+</div>
+
+<div class="result-card">
+
+<div class="result-top">
+<h3>Paid Campaigns</h3>
+<span class="growth">ADS</span>
+</div>
+
+<div class="progress">
+<div style="width:76%"></div>
+</div>
+
+<div class="result-info">
+<span>Reach</span>
+<span>Conversions</span>
+</div>
+
+</div>
+
+<div class="result-card">
+
+<div class="result-top">
+<h3>Lead Generation</h3>
+<span class="growth">LEADS</span>
+</div>
+
+<div class="progress">
+<div style="width:82%"></div>
+</div>
+
+<div class="result-info">
+<span>Traffic</span>
+<span>Qualified Leads</span>
+</div>
+
+</div>
+
+<div class="result-card">
+
+<div class="result-top">
+<h3>Conversion</h3>
+<span class="growth">DATA</span>
+</div>
+
+<div class="progress">
+<div style="width:68%"></div>
+</div>
+
+<div class="result-info">
+<span>Optimization</span>
+<span>Performance</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="label">Client Stories</span>
+
+<h2>What Our Clients Say</h2>
+
+<p>
+Real partnerships. Real marketing conversations.
+</p>
+
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+
+<div class="stars">★★★★★</div>
+
+<p>
+"Clear communication, transparent reporting and
+a strong focus on digital marketing performance."
+</p>
+
+<div class="client">
+<div class="client-avatar">C</div>
+<div>
+<strong>Client Review</strong>
+<small>Business Owner</small>
+</div>
+</div>
+
+</div>
+
+<div class="testimonial">
+
+<div class="stars">★★★★★</div>
+
+<p>
+"Googlinks helped us create a much stronger digital
+presence and improve our online lead generation."
+</p>
+
+<div class="client">
+<div class="client-avatar">B</div>
+<div>
+<strong>Client Review</strong>
+<small>Business Founder</small>
+</div>
+</div>
+
+</div>
+
+<div class="testimonial">
+
+<div class="stars">★★★★★</div>
+
+<p>
+"Professional communication, practical strategies
+and a clear approach to digital marketing."
+</p>
+
+<div class="client">
+<div class="client-avatar">D</div>
+<div>
+<strong>Client Review</strong>
+<small>Business Director</small>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>Ready to Grow Your Business?</h2>
+
+<p>
+Tell us about your business and your goals.
+Googlinks can help you build a practical digital
+marketing strategy around them.
+</p>
+
+<a href="#contact" class="btn">
+Get Your Free Consultation →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="container contact-grid">
+
+<div class="contact-info">
+
+<h2>Let's Talk About Your Growth.</h2>
+
+<p>
+Have a project, campaign or growth challenge?
+Send us a message and the Googlinks team will
+get back to you.
+</p>
+
+<div class="contact-item">
+
+<div class="contact-icon">✉</div>
+
+<div>
+<strong>Email</strong>
+<span>contact@googlinks.com</span>
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">☎</div>
+
+<div>
+<strong>Phone</strong>
+<span>+91 99999 99999</span>
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">⌖</div>
+
+<div>
+<strong>Website</strong>
+<span>Googlinks.com</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="contact-form">
+
+<form onsubmit="sendWhatsApp(event)">
+
+<div class="form-row">
+
+<div class="form-group">
+<label>Name</label>
+<input
+type="text"
+id="name"
+placeholder="Your name"
+required>
+</div>
+
+<div class="form-group">
+<label>Phone</label>
+<input
+type="tel"
+id="phone"
+placeholder="Your phone"
+required>
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label>Email</label>
+
+<input
+type="email"
+id="email"
+placeholder="Your email"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Tell us about your project</label>
+
+<textarea
+id="message"
+placeholder="How can Googlinks help your business?"></textarea>
+
+</div>
+
+<button class="btn btn-primary" type="submit">
+Send Enquiry →
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-logo">
+Goog<span>links</span>
+</div>
+
+<p class="footer-about">
+Googlinks provides professional digital marketing
+services including SEO, paid advertising, social media,
+lead generation and web solutions.
+</p>
+
+</div>
+
+<div>
+
+<h4>Services</h4>
+
+<ul class="footer-links">
+<li><a href="#services">SEO</a></li>
+<li><a href="#services">Google Ads</a></li>
+<li><a href="#services">Social Media</a></li>
+<li><a href="#services">Lead Generation</a></li>
+<li><a href="#services">Web Design</a></li>
+</ul>
+
+</div>
+
+<div>
+
+<h4>Company</h4>
+
+<ul class="footer-links">
+<li><a href="#about">About Googlinks</a></li>
+<li><a href="#process">Our Process</a></li>
+<li><a href="#results">Performance</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+
+<div>
+
+<h4>Contact</h4>
+
+<ul class="footer-links">
+
+<li>
+<a href="mailto:contact@googlinks.com">
+contact@googlinks.com
+</a>
+</li>
+
+<li>
+<a href="tel:+919999999999">
++91 99999 99999
+</a>
+</li>
+
+<li>Googlinks.com</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<span>
+© 2026 Googlinks. All rights reserved.
+</span>
+
+<span>
+Privacy Policy &nbsp; | &nbsp; Terms & Conditions
+</span>
+
+</div>
+
+</div>
+
+</footer>
+
+<a
+href="https://wa.me/919999999999"
+target="_blank"
+class="whatsapp"
+title="Chat with Googlinks on WhatsApp">
+☎
+</a>
+
+<script>
+
+function toggleMenu(){
+    document
+    .getElementById("navMenu")
+    .classList
+    .toggle("active");
+}
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const message =
+        document.getElementById("message").value;
+
+    /* Replace with your real WhatsApp number */
+    const whatsappNumber = "919999999999";
+
+    const text =
+        "Hello Googlinks,%0A%0A" +
+        "Name: " + encodeURIComponent(name) +
+        "%0APhone: " + encodeURIComponent(phone) +
+        "%0AEmail: " + encodeURIComponent(email) +
+        "%0AMessage: " + encodeURIComponent(message);
+
+    window.open(
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        text,
+        "_blank"
+    );
+}
+
+</script>
+
+</body>
+</html>
+```
